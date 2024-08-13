@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../PORTAFOLIO"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FULVO"
+	}
+}

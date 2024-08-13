@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+:root{
+    --colorprimario: white;
+    --colorsecundario: yellow;
+    --fuente-oswald: "Oswald", sans-serif;
+    --fuente-montserrat: "Montserrat", system-ui;
+    --fuente-krona: "Krona One", system-ui;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.header{
+    padding: 20% 0% 0% 15%;
+    font-family: var(--fuente-montserrat);
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url('../ASSETS/ucl\ fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    color: var(--colorprimario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    
+}
+.goats{
+    position:absolute;
+    top: 200px; 
+    right: 70px; 
+   
+}
+.presentacion{
+    padding: 5% 15%;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.presentacion_texto{
+    width:  617px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--fuente-montserrat);
+    flex: 1;
+}
+.destack{
+    color: var(--colorsecundario);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-out;
+}
+.ligas{
+    
+    gap: 16px;
+    overflow: hidden;
+}
+.boton_ligas{
+    width: 378px;
+    align-items: center;
+    color:black;
+    border: 2px inset blue;
+    padding: 21.5px 2;
+    margin: 4%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-family: var(--fuente-oswald);
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    transform-origin: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+}
+.boton_ligas:hover{
+    background-color: skyblue;
+    cursor: pointer;
+    transform: scale(1.05);
+    animation: pulse 1s infinite;
+}
+.boton_ligas img {
+    transition: transform 0.6s ease-in-out, filter 0.3s ease;
+}
+
+.boton_ligas:hover img {
+    transform: rotate(360deg);
+    filter: brightness(1.2);
+}
+
+.footer{
+    display: flex;
+    background-color: var(--color-terciario);
+    flex: 1;
+    padding: 2px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-oswald);
+    font-size: 18px;
+    font-weight: 400px;
+    margin-top: auto;
+}

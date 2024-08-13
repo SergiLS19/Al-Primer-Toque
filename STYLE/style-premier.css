@@ -1,0 +1,46 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --colorprimario: white;
+    --colorsecundario: purple;
+    --fuente-oswald: "Oswald", sans-serif;
+    --fuente-montserrat: "Montserrat", system-ui;
+    --fuente-krona: "Krona One", system-ui;
+}
+.header{
+    color: var(--colorprimario);
+    font-family: var(--fuente-montserrat);
+}
+body{
+    background-image: url(/ASSETS/fondo\ premier.jpg);
+    background-size: auto;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;
+    color: var(--colorprimario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.contenido{
+    padding: 5% 15%;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.contenido_temporada{
+    width:  617px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--fuente-krona);
+    flex: 1;
+}
+.destack{
+    text-align: center;
+    color: gold;
+}
