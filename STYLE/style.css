@@ -50,12 +50,9 @@ body {
     
 }
 .goats{
-    position:relative;
+    position:absolute;
     top: 200px; 
     right: 70px;
-    
-     
-   
 }
 .presentacion{
     padding: 5% 15%;
